@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adan Fatima Khan - Portfolio</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background: #f2f2f2;
+        color: #000;
+        line-height: 1.5;
+        padding: 20px;
+    }
+    .container {
+        max-width: 800px;
+        background: white;
+        margin: auto;
+        padding: 40px 50px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* HARVARD HEADER */
+    .header { text-align: center; border-bottom: 2px solid #000; padding-bottom: 15px; margin-bottom: 20px; }
+    .header h1 { font-size: 28px; letter-spacing: 1px; text-transform: uppercase; }
+    .header p { font-size: 14px; margin-top: 5px; }
+    .header a { color: #000; text-decoration: none; }
+
+    /* SECTIONS */
+    h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 3px;
+        margin: 22px 0 10px 0;
+    }
+    .row { display: flex; justify-content: space-between; }
+    .row b { font-size: 15px; }
+    .row span { font-size: 14px; font-style: italic; }
+    .detail { font-size: 14px; margin: 3px 0 10px 0; }
+    ul { margin-left: 20px; font-size: 14px; }
+    ul li { margin-bottom: 4px; }
+    .skills { font-size: 14px; }
+    .skills b { display: inline-block; width: 110px; }
+
+    /* PROJECTS AS PORTFOLIO */
+    .project { margin-bottom: 12px; }
+    .project a { color: #000; font-weight: bold; }
+
+    /* BUTTON */
+    .btn { text-align: center; margin-top: 25px; }
+    .btn button {
+        background: #000; color: #fff; border: none;
+        padding: 10px 20px; font-family: inherit; cursor: pointer;
+    }
+    @media print { body { background: white; padding: 0; } .container { box-shadow: none; } .btn { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 1. NAME + CONTACT -->
+    <div class="header">
+        <h1>Adan Fatima Khan</h1>
+        <p>Lahore, Pakistan | +92 303 2826719 | kadan7310@gmail.com</p>
+        <p><a href="https://www.linkedin.com/in/adan-khan-72455942a?utm_source=share_via&utm_content=profile&utm_medium=member_android">linkedin.com/in/adanfatima</a> | <a href="github.com-kadan7310-a11y">github.com/adanfatima</a></p>
+        <p style="margin-top:8px; font-style: italic;">BSSE Student | Aspiring Web Developer</p>
+    </div>
+
+    <!-- 2. ABOUT / OBJECTIVE -->
+    <h2>Profile</h2>
+    <p class="detail">Motivated BSSE student at PUCIT with a strong interest in Web Development. Currently full Stack Web Developer. Passionate about building clean, responsive and user-friendly websites.</p>
+
+    <!-- 3. EDUCATION - HARVARD STYLE -->
+    <h2>Education</h2>
+    <div class="row"><b>FCIT - BS Software Engineering</b><span>Lahore, Pakistan</span></div>
+    <p class="detail">Expected 2030| Currently in 1st Semester</p>
+    <div class="row"><b>FSc ICS</b><span>2024 - 2026</span></div>
+    <p class="detail">Board of Intermediate and Secondary Education, Lahore</p>
+
+    <!-- 4. SKILLS -->
+    <h2>Skills</h2>
+    <p class="skills"><b>Languages:</b> HTML, CSS, JavaScript,</p>
+    <p class="skills"><b>Tools:</b> VS Code, Git & GitHub, Google Drive</p>
+    <p class="skills"><b>Other:</b> MS Word, Problem Solving, Communication</p>
+
+    <!-- 5. PROJECTS / PORTFOLIO -->
+    <h2>Projects</h2>
+    <div class="project">
+        <div class="row"><b><a href="#">YouTube Clone Website</a></b><span>HTML, CSS</span></div>
+        <ul><li>Created a responsive YouTube homepage layout with embedded videos and sidebar.</li></ul>
+    </div>
+    <div class="project">
+        <div class="row"><b><a href="#">Personal Portfolio Website</a></b><span>HTML, CSS</span></div>
+        <ul><li>Designed a Harvard CV style portfolio to showcase education, skills and projects.</li></ul>
+    </div>
+    <div class="project">
+        <div class="row"><b><a href="#">Calculator App</a></b><span>JavaScript</span></div>
+        <ul><li>Built a working calculator with basic operations using JavaScript.</li></ul>
+    </div>
+
+    <!-- 6. EXPERIENCE / ACTIVITIES -->
+    <h2>Experience & Activities</h2>
+    <div class="row"><b>Web Bootcamp Student</b><span>2026 - Present</span></div>
+    <ul><li>Learning modern web development by building practical projects.</li></ul>
+
+    <div class="btn"><button onclick="window.print()">Download / Print as PDF</button></div>
+
+</div>
+</body>
+</html>
